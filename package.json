@@ -1,0 +1,24 @@
+{
+  "name": "burger-express-hbars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desasser/burger-express-hbars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/desasser/burger-express-hbars/issues"
+  },
+  "homepage": "https://github.com/desasser/burger-express-hbars#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
