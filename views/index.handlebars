@@ -1,38 +1,38 @@
 <h1>Burgers!</h1>
 
-<h2>Burgers that are not eaten!</h2>
+<div class="burger-image"></div>
 
-<ul>
-  {{#each burgers}}
-    {{#unless eaten}}
-      {{> burgers/burger-block eaten=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+<div class="below-list">
+  <h2 style='float: clear:both;'>Add a burger</h2>
+  <form class="create-form">
 
-<h2>burgers that are eaten!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if eaten}}
-      {{> burgers/burger-block eaten=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="eaten">eaten?</label><br>
-    <input type="radio" name="eaten" value="1" checked> eaten!<br>
-    <input type="radio" name="eaten" value="0"> Awake
-  </div>
-
-  <button type="submit">Add burger</button>
+    <div class="form-group">
+      <label for="burger" class="burger-style">Burger Name:</label>
+      <input type="text" id="burger" name="name">
+    </div>
+    <button type="submit" class="burger-button">Add burger</button>
+</div>
 </form>
+
+<div class="listOne">
+  <h2>ARE YOU HUNGRY?</h2>
+  <ul>
+    {{#each burgers}}
+    {{#unless eaten}}
+    {{> burgers/burger-block eaten=true}}
+    {{/unless}}
+    {{/each}}
+  </ul>
+</div>
+
+
+<div class="listTwo">
+  <h2>YOU'VE EATEN ME!</h2>
+  <ul>
+    {{#each burgers}}
+    {{#if eaten}}
+    {{> burgers/burger-block eaten=false}}
+    {{/if}}
+    {{/each}}
+  </ul>
+</div>

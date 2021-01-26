@@ -1,7 +1,58 @@
+body {
+  background-color: #2b2d42;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+h1, h2, h3 {
+  color: #FFFFFF;
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #8d99ae;
+  border-radius: 0.25em;
+  color: #f8f32b;
+  font-size: 24px;
+  padding-left: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger-image {
+  background-image: url('../images/burger.jpg');
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.listOne {
+  float: left;
+  height: 300px;
+  width: 40vw;
+}
+
+.listTwo {
+  float: right;
+  height: 300px;
+  width: 40vw;
+}
+
+.below-list {
+  clear: both;
+  width: 40vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.burger-style {
+  color: #FFFFFF;
+  font-size: 30px;
 }
 
 .label {
@@ -16,4 +67,28 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.burger-button {
+  font-size:24px;
+  background-color: #8d99ae;
+  border-radius: 0.25em;
+  padding: 10px 20px;
+  border: none;
+}
+
+.delete-burger, .change-eaten {
+  font-size:16px;
+  background-color: #2b2d42;
+  border-radius: 0.25em;
+  padding: 5px 20px;
+  border: none;
+  color: #8d99ae;
+}
+
+#burger {
+  font-size: 30px;
+  border-radius: 0.25rem;
+  border: none;
+  margin: 10px 0px;
 }

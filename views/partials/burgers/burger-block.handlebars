@@ -1,9 +1,19 @@
 <li>
-	{{name}}
+  {{name}}
 
-	<button class="change-eaten" data-id="{{id}}" data-neweat="{{eaten}}">
-		{{#if eaten}}EAT TIME!{{else}}WAKE UP!{{/if}}
-	</button>
+  {{#if eaten}}
+  <button class="change-eaten" data-id="{{id}}" data-neweat="{{eaten}}">
+    EAT ME!
+  </button>
+  {{else}}
+  <button class="change-eaten" data-id="{{id}}" data-neweat="{{eaten}}" style="display: none;">
+  </button>
+  {{/if}}
 
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+  {{#if eaten}}
+  <button class="delete-burger" data-id="{{this.id}}" data-neweat="{{eaten}}" style="display: none;">DELETE!</button>
+  {{else}}
+  <button class="delete-burger" data-id="{{this.id}}" data-neweat="{{eaten}}">DELETE!</button>
+  {{/if}}
+
 </li>
