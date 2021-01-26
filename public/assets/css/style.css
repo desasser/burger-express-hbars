@@ -1,7 +1,40 @@
+body {
+  background-color: #668586;
+}
+
+h1 {
+  text-align: center;
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #82AEB1;
+  width: 40vw;
+}
+
+.burger-image {
+  background-image: url('../images/burger.jpg');
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.listOne {
+  float: left;
+  height: 300px;
+}
+
+.listTwo {
+  float: right;
+  height: 300px;
+}
+
+.below-list {
+  clear: both;
+  width: 40vw;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .label {

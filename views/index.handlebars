@@ -1,38 +1,40 @@
 <h1>Burgers!</h1>
 
-<h2>Burgers that are not eaten!</h2>
+<div class="burger-image"></div>
 
-<ul>
-  {{#each burgers}}
+
+<div class="listOne">
+  <h2>Burgers that are not eaten!</h2>
+  <ul>
+    {{#each burgers}}
     {{#unless eaten}}
-      {{> burgers/burger-block eaten=true}}
+    {{> burgers/burger-block eaten=true}}
     {{/unless}}
-  {{/each}}
-</ul>
+    {{/each}}
+  </ul>
+</div>
 
-<h2>burgers that are eaten!</h2>
 
-<ul>
-  {{#each burgers}}
+<div class="listTwo">
+  <h2>burgers that are eaten!</h2>
+  <ul class='listTwo'>
+    {{#each burgers}}
     {{#if eaten}}
-      {{> burgers/burger-block eaten=false}}
+    {{> burgers/burger-block eaten=false}}
     {{/if}}
-  {{/each}}
-</ul>
+    {{/each}}
+  </ul>
+</div>
 
-<h2>Add a burger</h2>
-<form class="create-form">
+<div class="below-list">
+  <h2 style='float: clear:both;'>Add a burger</h2>
+  <form class="create-form">
 
-  <div class="form-group">
-    <label for="burger">burger Name:</label>
-    <input type="text" id="burger" name="name">
-  </div>
+    <div class="form-group">
+      <label for="burger">Burger Name:</label>
+      <input type="text" id="burger" name="name">
+      <button type="submit">Add burger</button>
+    </div>
+</div>
 
-  <div class="form-group">
-    <label for="eaten">eaten?</label><br>
-    <input type="radio" name="eaten" value="1" checked> Eaten<br>
-    <input type="radio" name="eaten" value="0"> Not Eaten
-  </div>
-
-  <button type="submit">Add burger</button>
 </form>
