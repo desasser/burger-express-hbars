@@ -6,12 +6,12 @@
     EAT ME!
   </button>
   {{else}}
-  <button class="change-eaten" data-id="{{id}}" data-neweat="{{eaten}}" style="visibility: hidden;">
+  <button class="change-eaten" data-id="{{id}}" data-neweat="{{eaten}}" style="display: none;">
   </button>
   {{/if}}
 
   {{#if eaten}}
-  <button class="delete-burger" data-id="{{this.id}}" data-neweat="{{eaten}}" style="visibility: hidden;">DELETE!</button>
+  <button class="delete-burger" data-id="{{this.id}}" data-neweat="{{eaten}}" style="display: none;">DELETE!</button>
   {{else}}
   <button class="delete-burger" data-id="{{this.id}}" data-neweat="{{eaten}}">DELETE!</button>
   {{/if}}
