@@ -1,16 +1,25 @@
 body {
-  background-color: #668586;
+  background-color: #2b2d42;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
+}
+
+h1, h2, h3 {
+  color: #FFFFFF;
 }
 
 li {
   padding: 5px;
   margin: 5px;
-  background: #82AEB1;
+  background: #8d99ae;
   width: 40vw;
+  border-radius: 0.5em;
+  color: #f8f32b;
+  font-size: 24px;
+  padding-left: 20px;
+  list-style-type: none;
 }
 
 .burger-image {
@@ -37,6 +46,11 @@ li {
   text-align: center;
 }
 
+.burger-style {
+  color: #FFFFFF;
+  font-size: 30px;
+}
+
 .label {
   font-weight: bold;
 }
@@ -49,4 +63,16 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.burger-button {
+  font-size:24px;
+  background-color: #8d99ae;
+  border-radius: 0.25em;
+  padding: 10px 20px;
+  border: none;
+}
+
+#burger {
+  font-size: 30px;
 }

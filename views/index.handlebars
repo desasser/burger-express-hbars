@@ -2,9 +2,19 @@
 
 <div class="burger-image"></div>
 
+<div class="below-list">
+  <h2 style='float: clear:both;'>Add a burger</h2>
+  <form class="create-form">
+
+    <div class="form-group">
+      <label for="burger" class="burger-style">Burger Name:</label>
+      <input type="text" id="burger" name="name">
+    </div>
+      <button type="submit" class="burger-button">Add burger</button>
+</div>
 
 <div class="listOne">
-  <h2>Burgers that are not eaten!</h2>
+  <h2>ARE YOU HUNGRY?</h2>
   <ul>
     {{#each burgers}}
     {{#unless eaten}}
@@ -16,8 +26,8 @@
 
 
 <div class="listTwo">
-  <h2>burgers that are eaten!</h2>
-  <ul class='listTwo'>
+  <h2>YOU'VE EATEN ME!</h2>
+  <ul>
     {{#each burgers}}
     {{#if eaten}}
     {{> burgers/burger-block eaten=false}}
@@ -26,15 +36,5 @@
   </ul>
 </div>
 
-<div class="below-list">
-  <h2 style='float: clear:both;'>Add a burger</h2>
-  <form class="create-form">
-
-    <div class="form-group">
-      <label for="burger">Burger Name:</label>
-      <input type="text" id="burger" name="name">
-      <button type="submit">Add burger</button>
-    </div>
-</div>
 
 </form>
