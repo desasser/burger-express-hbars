@@ -12,7 +12,7 @@
 - - - - 
 
 ## Description: 
-This is a project to use Node, MySQL, Handlebars, Express, and a homemade ORM. It also utilizes the MVC design pattern. The meat of the project is a burger database that allows the user to input some burgers and consume them, then track them and delete them after consumption. 
+This is a project to use Node, MySQL, Handlebars, Express, and a homemade ORM. It also utilizes the MVC design pattern. The meat (hah!) of the project is a burger database that allows the user to input some burgers and consume them, then track them and delete them after consumption.
 
 ## Screenshot
 <img src="public\assets\images\langingPage.JPG" alt="Burger Express Landing Page">
